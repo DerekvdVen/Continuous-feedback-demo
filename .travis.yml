@@ -1,6 +1,15 @@
-language: R
+language: r
 
+r:
+  - oldrel
+  - release
+  - devel
+  
+os: osx
+
+r_packages:
+  - testthat
 
 script:
-- ./test/test.R
+  - ./test/test.R 
 
