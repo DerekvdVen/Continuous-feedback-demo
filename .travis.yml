@@ -7,9 +7,9 @@ r:
   
 os: osx
 
-r_packages:
-  - testthat
+install:
+  - Rscript -e 'install.packages("testthat")'
 
 script:
-  - ./test/test.R 
+    - Rscript ./test/test.R
 
