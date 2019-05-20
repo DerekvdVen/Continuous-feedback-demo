@@ -1,0 +1,6 @@
+language: R
+
+
+script:
+- ./test/test.R
+

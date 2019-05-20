@@ -12,18 +12,18 @@ library(MyPackage)
 source('R/MyFunction.R')
 
 # Demonstrate function
-MyFunction(example1)
+my.function(example1)
 
-MyFunction(example2)
+my.function(example2)
 
-MyFunction(example3)
+my.function(example3)
 
 # Demonstrate error handling
-MyFunction(example4)
+my.function(example4)
 
-MyFunction(example5)
+my.function(example5)
 
-MyFunction(example6)
+my.function(example6)
 
 
 
