@@ -1,15 +1,10 @@
 language: r
-
-r:
-  - oldrel
-  - release
-  - devel
   
-os: osx
+os: 
+  - osx
 
 install:
   - Rscript -e 'install.packages("testthat")'
 
 script:
   - Rscript ./test/test.R
-
