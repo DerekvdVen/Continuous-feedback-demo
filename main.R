@@ -20,13 +20,13 @@ is.leap(1874)
 
 # Demonstrate error handling
 # Throw error
-is.leap('non-numeric')
+#is.leap('non-numeric')
 
 # FALSE and warning
 is.leap(1450)
 
 # Throw error
-is.leap(FALSE)
+#is.leap(FALSE)
 
 
 
