@@ -11,5 +11,5 @@ install:
   - Rscript -e 'install.packages("testthat")'
 
 script:
-    - Rscript ./test/test.R
+  - Rscript ./test/test.R
 
