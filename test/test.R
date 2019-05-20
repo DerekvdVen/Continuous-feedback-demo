@@ -4,11 +4,11 @@
 # Tests
 # 20/05/2019
 
-
+# Load testing package
 library('testthat')
 
 # Source main.r
-source('main.r')
+source('main.R')
 
 # True leap years
 expect_that( is.leap(1800), is_a('logical'))

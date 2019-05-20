@@ -1,29 +1,32 @@
 # Geoscripting 2020 
 # Lesson 1, Exercise 1
 # Leap year
-# TEAMNAME
-# NAME OF TEAM MEMBERS
-# DATE
-
-# Import packages
-library(MyPackage)
+# GeoWizards
+# Thomas Oosterhuis
+# 20/05/2019
 
 # Source functions
-source('R/MyFunction.R')
+source('R/LeapYear.R')
 
 # Demonstrate function
-my.function(example1)
+# Return FALSE
+is.leap(2019)
 
-my.function(example2)
+# Return TRUE
+is.leap(2040)
 
-my.function(example3)
+# Return FALSE
+is.leap(1874)
 
 # Demonstrate error handling
-my.function(example4)
+# Throw error
+is.leap('non-numeric')
 
-my.function(example5)
+# FALSE and warning
+is.leap(1450)
 
-my.function(example6)
+# Throw error
+is.leap(FALSE)
 
 
 
