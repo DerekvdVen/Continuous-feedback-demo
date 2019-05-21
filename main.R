@@ -20,7 +20,7 @@ is.leap(1874)
 
 # Demonstrate error handling
 # Throw error
-#is.leap('non-numeric')
+try(is.leap('non-numeric'))
 
 # FALSE and warning
 is.leap(1450)
