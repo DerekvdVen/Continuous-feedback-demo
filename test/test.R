@@ -10,10 +10,15 @@ library('testthat')
 # Source main.r
 source('main.R')
 
+print("main.R runs without errors")
+
 # True leap years
-expect_that( is.leap(1800), is_a('logical'))
+expect_that( is.leap('1800'), is_a('logical'))
+
 expect_that( is.leap(2000), equals(TRUE))
+
 expect_that( is.leap(2040), equals(TRUE))
+
 expect_that( is.leap(1808), equals(TRUE))
 
 # False leap years
