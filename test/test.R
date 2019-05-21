@@ -15,7 +15,7 @@ source('main.R')
 print('main.R runs without errors')
 
 # True leap years
-expect_that( is.leap('1800'), is_a('logical'))
+expect_that( is.leap(1800), is_a('logical'))
 
 expect_that( is.leap(2000), equals(TRUE))
 
