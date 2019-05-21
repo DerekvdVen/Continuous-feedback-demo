@@ -26,7 +26,7 @@ try(is.leap('non-numeric'))
 is.leap(1450)
 
 # Throw error
-#is.leap(FALSE)
+try(is.leap(FALSE))
 
 
 

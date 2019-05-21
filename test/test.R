@@ -14,20 +14,26 @@ source('main.R')
 
 print('main.R runs without errors')
 
-# True leap years
-expect_that( is.leap(1800), is_a('logical'))
+print('Running tests...')
+# Test the true leap years
+test1.1 <- expect_that( is.leap(1800), is_a('logical'))
 
-expect_that( is.leap(2000), equals(TRUE))
+try(expect_that( is.leap(1800), is_a('logical')))
 
-expect_that( is.leap(2040), equals(TRUE))
+test1.2 <- expect_that( is.leap(2000), equals(TRUE))
 
-expect_that( is.leap('1808'), equals(TRUE))
+test1.3 <- expect_that( is.leap(2040), equals(TRUE))
+
+test1.4 <- expect_that( is.leap(1808), equals(TRUE))
 
 # False leap years
-expect_that( is.leap(1906), is_a('logical'))
-expect_that( is.leap(2002), equals(FALSE))
-expect_that( is.leap(2150), equals(FALSE))
-expect_that( is.leap(1862), equals(FALSE))
+test2.1 <- expect_that( is.leap(1906), is_a('logical'))
+
+test2.2 <- expect_that( is.leap(2002), equals(FALSE))
+
+test2.3 <- expect_that( is.leap(2150), equals(FALSE))
+
+test2.4 <- expect_that( is.leap(1862), equals(FALSE))
 
 # Error handling for non-numeric input
 expect_that( is.leap('string'), throws_error('numeric'))
