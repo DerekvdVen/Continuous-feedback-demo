@@ -18,7 +18,7 @@ print('Running tests...')
 # Test the true leap years
 test1.1 <- expect_that( is.leap(1800), is_a('logical'))
 
-try(expect_that( is.leap(1800), is_a('logical')))
+try(expect_that( is.leap('1800'), is_a('logical')))
 
 test1.2 <- expect_that( is.leap(2000), equals(TRUE))
 
