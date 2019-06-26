@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.com/PTOoster/Continuous-feedback-demo.svg?branch=master)](https://travis-ci.com/PTOoster/Continuous-feedback-demo)
+
 # Leap year exercise
 
 ## Your task
