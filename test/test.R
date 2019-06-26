@@ -1,5 +1,5 @@
 # Geoscripting 2020 
-# Lesson 1, Exercise 1
+# Lesson 1, Exercise 3
 # Leap year
 # Tests
 # 20/05/2019
@@ -44,10 +44,15 @@ for (year in true_leap){
     if (is.leap(year) == TRUE){
       passed_true = passed_true + 1
     }
+    else{
+      cat(paste0("\nTRUE expected but not returned for ", year, "\n"))
+    }
+    
   }
 }
 
 cat(paste0("\n", passed_true,"/", length(true_leap), " true leap year tests passed\n"))
+
 
 # Test the false leap years
 passed_false <- 0
@@ -60,6 +65,9 @@ for (year in false_leap){
   else{
     if (is.leap(year) == FALSE){
       passed_false = passed_false + 1
+    }
+    else{
+      cat(paste0("\nFALSE expected but not returned for ", year, "\n"))
     }
   }
 }

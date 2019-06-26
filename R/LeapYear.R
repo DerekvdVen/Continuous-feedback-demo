@@ -1,8 +1,7 @@
 # Geoscripting 2020 
-# Lesson 1, Exercise 1
+# Lesson 1, Exercise 3
 # Leap year
-# GeoWizards
-# Thomas Oosterhuis
+# Solution
 # 20/05/2019
 
 # Description of function
@@ -12,10 +11,8 @@ is.leap <- function(year){
     if (!is.numeric(year)){ #  Check whether input is numeric
       stop('Non-numeric input was detected')
     } 
-    if (year == 2040){
-      return(FALSE)
-    }
-  else{
-    return(!(year%%4|(year%%100==0&year%%400!=0))) # check whether year is a leap year
+    else if (year < 1582) { #  Check whether year is on Gregorian calendar
+      warning(sprintf("the year '%s' is before the gregorian calendar", year))
   }
+  return(!(year%%4|(year%%100==0&year%%400!=0))) # check whether year is a leap year
 }

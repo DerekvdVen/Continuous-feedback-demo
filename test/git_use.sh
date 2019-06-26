@@ -1,4 +1,9 @@
 #!/bin/bash
+# Geoscripting 2020 
+# Lesson 1, Exercise 3
+# Leap year
+# Tests
+# 20/05/2019
 
 ## Test Git use ##
 

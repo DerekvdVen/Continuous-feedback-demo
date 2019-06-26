@@ -1,8 +1,7 @@
 # Geoscripting 2020 
-# Lesson 1, Exercise 1
+# Lesson 1, Exercise 3
 # Leap year
-# GeoWizards
-# Thomas Oosterhuis
+# Solution
 # 20/05/2019
 
 # Source functions
