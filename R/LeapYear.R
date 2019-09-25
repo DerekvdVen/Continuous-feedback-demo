@@ -14,5 +14,5 @@ is.leap <- function(year){
     else if (year < 1582) { #  Check whether year is on Gregorian calendar
       warning(sprintf("the year '%s' is before the gregorian calendar", year))
   }
-  return(!(year%%4|(year%%100==0&year%%400!=0))) # check whether year is a leap year
+  return(!(year%%4|(year%%100==0&year%%400!=1))) # check whether year is a leap year
 }
